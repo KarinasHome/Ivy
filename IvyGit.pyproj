@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{765763d8-b275-476a-8713-59e9f4ce39f7}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>PI_Ivy.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Ivy.ini" />
+    <Content Include="IvyConfig\IvyAircraft_1.ini" />
+    <Content Include="IvyConfig\IvyAircraft_10.ini" />
+    <Content Include="IvyConfig\IvyAircraft_11.ini" />
+    <Content Include="IvyConfig\IvyAircraft_12.ini" />
+    <Content Include="IvyConfig\IvyAircraft_13.ini" />
+    <Content Include="IvyConfig\IvyAircraft_14.ini" />
+    <Content Include="IvyConfig\IvyAircraft_15.ini" />
+    <Content Include="IvyConfig\IvyAircraft_16.ini" />
+    <Content Include="IvyConfig\IvyAircraft_17.ini" />
+    <Content Include="IvyConfig\IvyAircraft_18.ini" />
+    <Content Include="IvyConfig\IvyAircraft_19.ini" />
+    <Content Include="IvyConfig\IvyAircraft_2.ini" />
+    <Content Include="IvyConfig\IvyAircraft_3.ini" />
+    <Content Include="IvyConfig\IvyAircraft_4.ini" />
+    <Content Include="IvyConfig\IvyAircraft_5.ini" />
+    <Content Include="IvyConfig\IvyAircraft_6.ini" />
+    <Content Include="IvyConfig\IvyAircraft_7.ini" />
+    <Content Include="IvyConfig\IvyAircraft_8.ini" />
+    <Content Include="IvyConfig\IvyAircraft_9.ini" />
+    <Content Include="MP3 Creation\references.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PI_Ivy.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IvyConfig" />
+    <Folder Include="MP3 Creation" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

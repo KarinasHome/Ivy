@@ -1,0 +1,83 @@
+
+
+<prosody pitch="medium" rate ="medium"> </prosody>
+<prosody rate ="slow"> </prosody>
+<emphasis level="strong"></emphasis> 
+<emphasis></emphasis>
+<emphasis level="reduced"> </emphasis>
+<say-as interpret-as="spell-out"></say-as>
+
+<speak>
+ <prosody pitch="x-high" rate="slow">Hi!</prosody><prosody rate="fast"> My name is</prosody><emphasis level="strong">Ivy.</emphasis>
+</speak>
+
+<speak>
+ <prosody pitch="x-high" rate="slow">Hi!</prosody><prosody rate="fast"> My name is</prosody><emphasis level="strong">Ivy.</emphasis>
+</speak>
+
+<speak>
+<emphasis level="strong"> <prosody pitch="x-high" rate="slow">Ohhhhh!</prosody></emphasis>
+</speak>
+
+<amazon:effect name="whispered">Hi! My name is Ivy.</amazon:effect>
+Hi! My name is <emphasis level="strong">Ivy.</emphasis>
+Hi! My name is <emphasis level="reduced">Ivy.</emphasis>
+Hi! My name is <prosody pitch="low">Ivy.</prosody>
+Hi! My name is <prosody pitch="high">Ivy.</prosody>
+Hi! My name is <prosody rate="slow">Ivy.
+Hi! My name is <prosody rate="high">Ivy.</prosody>
+
+
+<emphasis level="reduced"> </emphasis>
+<speak>
+That was a <emphasis level="strong"> smoooth </emphasis> landing.
+ <prosody pitch="x-high" rate="slow">Hi!</prosody><prosody rate="fast"> My name is</prosody>Ivy.
+</speak>
+
+<speak>
+That was a <emphasis level="strong"> smoooth landing. </emphasis> 
+</speak>
+
+<speak>
+<emphasis level="strong"> <prosody pitch="x-high" rate="fast">Ouch</prosody></emphasis> 
+</speak>
+
+<speak>
+<emphasis level="strong"> <prosody rate="fast">Ouch</prosody></emphasis> 
+</speak>
+
+<speak>
+<emphasis level="strong"> <prosody rate="fast">Ouch</prosody></emphasis> 
+</speak>
+
+<speak>
+<phoneme alphabet="x-sampa" ph="ɑw">ui</phoneme>
+<prosody rate="x-slow"><phoneme alphabet="x-sampa" ph="i:">ui</phoneme></prosody>
+</speak>
+
+<speak>
+<phoneme alphabet="x-sampa" ph="ɑwu">wui</phoneme>
+<prosody rate="x-slow"><phoneme alphabet="x-sampa" ph="i:">ui</phoneme></prosody>
+</speak>
+
+<speak>
+    <amazon:effect name="whispered">I always feel like <emphasis level="strong">James Bond</emphasis>, when we fly without transponder. The  <emphasis level="strong"> see </emphasis> us.</amazon:effect>
+</speak>
+<speak>
+<amazon:effect name="whispered">I always feel like <emphasis level="strong">James Bond</emphasis>, when we fly without transponder. The  <emphasis level="strong"><say-as interpret-as="spell-out">ATC</say-as></emphasis> has no clue where we are.</amazon:effect>
+</speak>
+
+<speak>
+<amazon:effect name="whispered">
+I always feel like <emphasis level="strong">James Bond</emphasis>, when we fly without transponder. 
+The <emphasis level="strong"><say-as interpret-as="spell-out">ATC</say-as></emphasis> has no clue where we are.
+</amazon:effect>
+</speak>
+
+<speak>
+    Turning on the lights we could actually <emphasis level="strong">see something</emphasis> .
+</speak>
+
+<speak>
+    <prosody pitch="high">Our wings look like a <emphasis level="strong">glacier</emphasis>.</prosody>
+</speak>

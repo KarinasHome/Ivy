@@ -1,0 +1,13 @@
+/IvyConfig/*.txt
+/IvyConfig/IvyLogbook.txt
+/IvyConfig/IvyLog.txt
+/IvyConfig/IvyLogbook - Kopie.txt
+.vs
+*.obj
+*.tlog
+*.log
+*.exp
+*.lib
+__MACOSX
+/Client_CPP/Ivy/Debug
+/Client_CPP/Ivy/Release

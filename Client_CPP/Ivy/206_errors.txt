@@ -1,0 +1,140 @@
+Switches after Aircraft loading:
+ - 2-3 Switches and/or circuit breakers are switched to a different position (clumsy cleaning personel)
+
+Failures during Operation
+ -> If the MTBF in the Control Window is >0, various circuit breakers might flip during flight or on ground
+  - ADF
+  - Cockpit Lights
+  - Transmisssion Indicator (will cause engine failure after 10min)
+  - Fuel Pressure Indicator
+  - GPS
+  - Instrument Lights
+  - SAS
+  - ToT Indicator (no eng. failure yet, will come later)
+  - VHF
+
+Note: Turn Indicator and Transponder worked even if the BR was out, so I left them out of this
+
+Height Velocity Diagram
+  - Place the hv_diagram.ini in your aircraft folder
+  - HV diagram following can be viewed in graphs part of the control window
+  - Announcement on violation
+
+---------------------------   Failure Detection   ---------------------------
+
+Battery Draining (Batt on, Gen off)
+ - Landing Lights on
+ - Position Lights on
+ - Engine Anti Ice on
+ - Pitot Heat on
+ - Cabin Heater on
+
+Generator low rpm
+ - below 65% N1 while Engine is ON
+
+Startup Preconditions not met
+ - Landing lights on
+ - Engine Anti-Ice on
+ - Pitot Heat on
+ - Hydraulics off
+ - Circuit Breakers not in
+ - Generator on
+ - TOT test switch not pressed before
+ - Caution Lights test switch not pressed before
+ - Cyclic not centered
+ - Throttle not OFF
+
+Starter early off
+ - OFF below 55% N1
+
+Starter late off
+ - OFF above 65%
+
+Circuit Breakers not IN
+ - When engine is running or starter button is pressed
+
+High Engine Wear
+ - Rotor RPM < 88% and Torque > 35%
+
+Cyclic not centered (on ground only)
+ - On Ground and Rotor RPM between 20 and 90%
+
+VRS Conditions
+ - IAS < 30kt
+ - VS < -300ft/min
+
+Pitot Overheating
+ - Outside Temperature > 4.4°C for 5min
+
+Anti Ice Overheating
+ - Outside Temperature > 4.4°C for 5min
+
+Wind from Critical Direction:
+ - Wind from between 50° and 210° from the aircraft perspective
+ - Wind >=10 kt
+
+Service Ceiling:
+ - gross weight <= 1360kg: 20000ft alt
+ - gross weight >1360kg: 13500ft density alt
+
+Aircraft Overspeed:
+ - 130kt
+ - above 3000ft: -3.5kt per 1000ft density altitude
+ - if torque > 85%: 80kt
+ - if doors removed: 69kt (not checking for single doors, yet)
+
+Engine Overspeed
+ - >106% N1 for 0 seconds
+ - >105% N1 for 5 seconds
+-> Causes Engine Fire
+
+Overtorque:
+ - >85% for 5min 
+ - >100% for 5 seconds
+ - >110% for 0.1 seconds
+-> Causes Engine Fire
+
+ITT on ground:
+ - >738°C for 5min
+ - >810°C for 10s
+ - >927 for 0.1s
+-> Causes Engine Fire
+
+ITT during flight:
+ - >738°C for 5min
+ - >810°C for 6s
+ - >843 for 0.1s
+-> Causes Engine Fire
+
+Oil Pressure on ground:
+ - >50psi for 5min
+ - >70psi for 0.1s
+-> Causes Engine Fire
+
+Transmission Oil Pressure during flight:
+ - >50psi for 5min
+ - >70psi for 0.1s
+ - <30psi for 10min
+-> Causes Engine Fire (even if it is just the instrument -> watch it)
+
+Transmission Oil Tempreature on ground:
+ - >110°C for 5min
+-> Causes Engine Fire
+
+Transmission Oil Tempreature during flight:
+ - >110°C for 5min
+ - <15°C for 10min
+-> Causes Engine Fire (even if it is just the instrument -> watch it)
+
+Rotor RPM Engine Running:
+ - <95% for 0s
+ - <97% for 5s
+ - >105 for 1s
+-> Announcement only
+
+Rotor RPM Engine Off
+ - <90% for 1s
+ - >107 for 1s
+-> Announcement only
+
+
