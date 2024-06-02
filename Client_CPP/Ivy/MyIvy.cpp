@@ -2361,12 +2361,12 @@ float MyIvy::IvyFlightLoopCallback(float elapsedMe, float elapsedSim, int counte
 		}
 
 		// Localizer Alive
-		if ((m_lf_hsi_hdef_dot < 2.4f) && (m_lf_hsi_hdef_dot > -2.4f) && (m_lf_hsi_hdef_dot != 0) && (m_li_hsi_display_h > 0) && (m_ivyAircraft->m_localizer_enable == true))					
+		if ((m_lf_hsi_hdef_dot < 2.4f) && (m_lf_hsi_hdef_dot > -2.4f) && (m_lf_hsi_hdef_dot != 0) && (m_li_hsi_display_h > 0) && (m_ivyAircraft->m_localizer_enable == true) && (m_li_on_ground == 0))
 																																				m_ivyLocalizerAlive->Activate(m_time);
 		else																																	m_ivyLocalizerAlive->Deactivate(m_time);
 
 		// Glide Slope Alive
-		if ((m_lf_hsi_vdef_dot < 2.4f) && (m_lf_hsi_vdef_dot > -2.4f) && (m_lf_hsi_vdef_dot != 0) && (m_li_hsi_display_h > 0) && (m_li_hsi_display_v > 0) && (m_ivyAircraft->m_localizer_enable == true))
+		if ((m_lf_hsi_vdef_dot < 2.4f) && (m_lf_hsi_vdef_dot > -2.4f) && (m_lf_hsi_vdef_dot != 0) && (m_li_hsi_display_h > 0) && (m_li_hsi_display_v > 0) && (m_ivyAircraft->m_localizer_enable == true) && (m_li_on_ground == 0))
 																																											m_ivyGlideSlopeAlive->Activate(m_time);
 		else																																								m_ivyGlideSlopeAlive->Deactivate(m_time);
 
